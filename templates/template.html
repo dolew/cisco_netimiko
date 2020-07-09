@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <title>Vlans</title>
+</head>
+<body>
+    <div class="container">  
+        <form id="contact" method="POST" enctype="multipart/form-data">
+          <h3>Cisco vlan creation</h3>
+          <fieldset>
+            <input placeholder="Index X" type="text" name="indexX" tabindex="1" required autofocus>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Index Y" type="text" name="indexY" tabindex="2" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Input list of vlan, input a list 0 IF NONE:" name ="novlan" type="text" tabindex="3" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Name of your vlans" type="text" name="vlanN" tabindex="4" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Configuration file" type="file" name = "file" tabindex="4" required>
+          </fieldset>
+          <fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+          </fieldset>
+          <p class="copyright">Designed by youssef</a></p>
+        </form>
+      </div>
+</body>
+</html>

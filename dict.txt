@@ -1,0 +1,20 @@
+{ 
+1:{
+    'device_type': 'cisco_ios',
+    'host':   '192.168.30.77',
+    'username': 'youssef',
+    'password': 'youssef',
+},
+ 2:{
+    'device_type': 'cisco_ios',
+    'host':   '192.168.30.75',
+    'username': 'youssef',
+    'password': 'youssef',
+},
+ 3:{
+    'device_type': 'cisco_ios',
+    'host':   '192.168.30.78',
+    'username': 'youssef',
+    'password': 'youssef',
+},
+}
