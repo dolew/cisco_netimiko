@@ -4,9 +4,9 @@
     <title>Vlans</title>
 </head>
 <body>
-    <div class="container">  
+        <h3>cisco switches series (2000-9000)</h3>
         <form id="contact" method="POST" enctype="multipart/form-data">
-          <h3>Cisco vlan creation</h3>
+           <h1>      Vlan Automation For Multiple cisco switches and auto trunk setup</h1>
           <fieldset>
             <input placeholder="Index X" type="text" name="indexX" tabindex="1" required autofocus>
           </fieldset>
@@ -14,19 +14,23 @@
             <input placeholder="Index Y" type="text" name="indexY" tabindex="2" required>
           </fieldset>
           <fieldset>
-            <input placeholder="Input list of vlan, input a list 0 IF NONE:" name ="novlan" type="text" tabindex="3" required>
+            <input placeholder="Input list of vlan, input a LIST  0 IF NONE:" name ="novlan" type="text" tabindex="3" required>
+            <p> Exemple : exlude vlan 100 && vlan 1 [100,1] / include all [0]</p>
           </fieldset>
           <fieldset>
             <input placeholder="Name of your vlans" type="text" name="vlanN" tabindex="4" required>
           </fieldset>
+           <fieldset>
+            <input placeholder="Input the DOUBLE LIST of your trunk interface by file order" type="text" name="interface" tabindex="4" required>
+            <p> 1:config 2:config... [[1],[2]...]each sw will have a list of interface trunk</p>
+          </fieldset>
           <fieldset>
+            <fieldset>
             <input placeholder="Configuration file" type="file" name = "file" tabindex="4" required>
           </fieldset>
-          <fieldset>
             <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
           </fieldset>
-          <p class="copyright">Designed by youssef</a></p>
+          <p class="copyright">Backend by youssef</a></p>
         </form>
-      </div>
 </body>
 </html>
